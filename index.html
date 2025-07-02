@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Dummy Site</title>
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <h1>Welcome to My Dummy Website</h1>
+  <p>This site is for practicing Google Analytics.</p>
+
+  <button onclick="gtag('event', 'click', {
+    'event_category': 'engagement',
+    'event_label': 'Test Button',
+    'value': 1
+  })">
+    Click Me!
+  </button>
+</body>
+</html>
